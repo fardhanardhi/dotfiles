@@ -1,2 +1,5 @@
 # Karabiner auto-generated backups
 karabiner/.config/karabiner/automatic_backups/
+
+# macOS system files
+**/.DS_Store
