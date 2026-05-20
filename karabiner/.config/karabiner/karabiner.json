@@ -2,6 +2,7 @@
     "global": { "check_for_updates_on_startup": false },
     "machine_specific": {
         "krbn-dad6132b-ebba-48fa-b36a-86b96a780921": { "enable_multitouch_extension": true },
+        "krbn-ec843c00-1a3a-4b7f-b708-dfb0e3130bb6": { "enable_multitouch_extension": true },
         "krbn-empty-machine-identifier": { "enable_multitouch_extension": true }
     },
     "profiles": [
