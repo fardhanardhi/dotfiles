@@ -1,0 +1,7 @@
+[user]
+	name = Adan
+	email = fa.dsg.id@gmail.com
+[sequence]
+	editor = code --wait --reuse-window
+[core]
+	editor = micro
