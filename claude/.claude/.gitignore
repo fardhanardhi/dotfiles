@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Allow config files
+!.gitignore
+!CLAUDE.md
+!settings.json
+
+# Allow directories + contents
+!commands/
+!commands/**
+!hooks/
+!hooks/**
+!agents/
+!agents/**
+!skills/
+!skills/**
+!rules/
+!rules/**
