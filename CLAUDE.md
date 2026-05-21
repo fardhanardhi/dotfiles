@@ -15,6 +15,9 @@ Each top-level directory is a **stow package** whose internal tree mirrors `$HOM
 - `nvim/.config/nvim/...` → `~/.config/nvim/...`
 - `karabiner/.config/karabiner/...` → `~/.config/karabiner/...`
 - `yazi/.config/yazi/...` → `~/.config/yazi/...`
+- `zsh/.zshrc` → `~/.zshrc`
+- `zsh/.zprofile` → `~/.zprofile`
+- `zsh/.zshenv` → `~/.zshenv`
 
 When adding a new package, preserve this mirror layout so `stow <pkg>` from the repo root produces correct symlinks.
 
@@ -36,6 +39,7 @@ Run from the repo root. Stow refuses to clobber existing real files — back the
 - **yazi** — Theme and package configs only ([yazi/.config/yazi/theme.toml](yazi/.config/yazi/theme.toml), [yazi/.config/yazi/package.toml](yazi/.config/yazi/package.toml)).
 - **warp** — Warp terminal settings at [warp/.warp/settings.toml](warp/.warp/settings.toml). Covers appearance, privacy/secret-redaction patterns, agent config, and notifications. Reload: restart Warp.
 - **git** — [git/.gitconfig](git/.gitconfig) only. User identity + editor.
+- **zsh** — Shell config split across three files: [zsh/.zshenv](zsh/.zshenv) (sourced always, minimal env bootstrapping), [zsh/.zprofile](zsh/.zprofile) (login shell PATH + tool exports: Flutter, Android, Bun, NVM, Homebrew, Ruby), [zsh/.zshrc](zsh/.zshrc) (interactive: aliases, sdkman, zoxide). Reload: open new shell or `source ~/.zshrc`.
 
 ## Commit conventions
 

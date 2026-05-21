@@ -13,7 +13,8 @@ Each top-level directory is a stow package whose contents mirror `$HOME`:
 ├── karabiner/  → ~/.config/karabiner/
 ├── nvim/       → ~/.config/nvim/
 ├── warp/       → ~/.warp/
-└── yazi/       → ~/.config/yazi/
+├── yazi/       → ~/.config/yazi/
+└── zsh/        → ~/.zshrc, ~/.zprofile, ~/.zshenv
 ```
 
 ## Prerequisites
@@ -30,6 +31,7 @@ Per-package:
 - **yazi** — `brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide`.
 - **warp** — `brew install --cask warp`. No extra deps.
 - **git** — no extra deps.
+- **zsh** — no extra deps. Requires [zoxide](https://github.com/ajeetdsouza/zoxide) (`brew install zoxide`), [sdkman](https://sdkman.io/), and nvm for full functionality.
 
 ## Install
 
@@ -38,7 +40,7 @@ Clone, then stow what you want:
 ```sh
 git clone <repo-url> ~/private-dotfiles
 cd ~/private-dotfiles
-stow claude nvim karabiner warp yazi git
+stow claude nvim karabiner warp yazi git zsh
 ```
 
 Or one package at a time: `stow nvim`.
