@@ -50,7 +50,7 @@ enabled = true
 workspace_decoration_visibility = "always_show"
 
 [appearance.window]
-zoom_level = 110
+zoom_level = 100
 
 [general]
 login_item = false
@@ -73,6 +73,7 @@ enabled = true
 agent_mode_coding_permissions = "always_allow_reading"
 
 [terminal]
+osc52_clipboard_access = "write_only"
 
 [terminal.input]
 
