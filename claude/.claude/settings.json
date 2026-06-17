@@ -61,5 +61,5 @@
   "voiceEnabled": false,
   "theme": "dark-daltonized",
   "switchModelsOnFlag": true,
-  "model": "sonnet"
+  "model": "opus"
 }
