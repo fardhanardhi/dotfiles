@@ -30,7 +30,8 @@
     "superpowers@claude-plugins-official": true,
     "obsidian@obsidian-skills": true,
     "frontend-design@claude-plugins-official": true,
-    "warp@claude-code-warp": true
+    "warp@claude-code-warp": true,
+    "n8n-mcp-skills@n8n-mcp-skills": true
   },
   "extraKnownMarketplaces": {
     "obsidian-skills": {
@@ -50,16 +51,23 @@
         "source": "github",
         "repo": "warpdotdev/claude-code-warp"
       }
+    },
+    "n8n-mcp-skills": {
+      "source": {
+        "source": "github",
+        "repo": "czlonkowski/n8n-skills"
+      }
     }
   },
   "effortLevel": "medium",
+  "tui": "fullscreen",
   "voice": {
     "enabled": false,
     "mode": "hold"
   },
   "skipDangerousModePermissionPrompt": true,
-  "voiceEnabled": false,
   "theme": "dark-daltonized",
   "switchModelsOnFlag": true,
+  "voiceEnabled": false,
   "model": "opus"
 }
