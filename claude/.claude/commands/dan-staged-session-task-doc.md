@@ -15,9 +15,12 @@ Buat satu file markdown di root project yang menjelaskan perubahan/changes pada 
 - **Jangan banyak horizontal line** (`---`). Heading H1 sudah cukup jadi pemisah.
 - **Tidak terlalu teknis** — dokumen ini untuk **administrasi task**, jadi sisakan sudut pandang **business logic / dampak fungsional** saja.
 - **Jangan mention path atau nama file** project (mis. `src/...`, nama file `.js`/`.tsx`). Sebut fitur/halaman dengan nama yang dikenal user, bukan referensi kode.
+- **Jangan pakai istilah yang mengacu ke internal project** seperti source code, nama file, atau struktur kode. Fokus ke apa yang user lihat/rasakan.
+- **Jangan tampilkan data/variabel internal app** seperti `context.foo` atau `useFooBar mount`. Deskripsikan perilakunya, bukan implementasinya.
+- **Jangan translate paksa istilah teknikal ke Bahasa Indonesia** — hasilnya kaku dan aneh. Biarkan tetap istilah Inggris: action (bukan "aksi"), card (bukan "kartu"), sync (bukan "sinkron"), button (bukan "tombol"), branch (bukan "cabang").
 
 ## Konten
 
-Simpulkan perubahan dari session berjalan. Kalau perlu konteks tambahan untuk tahu apa yang berubah, cek `git status` dan `git diff` lebih dulu. Boleh pakai tabel kalau membantu (mis. contoh input/output yang dirasakan user), tapi tetap dari sisi business.
+Simpulkan perubahan dari session berjalan. Kalau perlu konteks tambahan untuk tahu apa yang berubah, cek `git status` dan `git diff` lebih dulu. **Jangan pakai tabel markdown** — gunakan bullet point saja (mis. untuk contoh input/output yang dirasakan user), tapi tetap dari sisi business.
 
 Argumen opsional `$ARGUMENTS` bisa dipakai untuk menentukan nama file output atau fokus topik. Kalau kosong, pilih nama file yang deskriptif sendiri (mis. `CHANGES_<topik>.md`).
